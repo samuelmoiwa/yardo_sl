@@ -103,10 +103,6 @@ function NavBar() {
             </NavLink>
           </div>
 
-          <button onClick={toggleTheme} className="text-white text-xl">
-            {theme === "dark" ? <FaSun /> : <FaMoon />}
-          </button>
-
           <div className="flex items-center -mr-2 lg:hidden">
             <button
               onClick={toggleMenu}
@@ -168,6 +164,11 @@ function NavBar() {
             </Link>
           </div>
         </div>
+
+
+        <button onClick={toggleTheme} className="text-white text-xl">
+            {theme === "dark" ? <FaSun /> : <FaMoon />}
+          </button>
 
         </div>
       </div>
