@@ -81,8 +81,6 @@ function NavBar() {
     setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
   };
 
-
-
   const renderSubLinks = (subLinks) => (
     <div className="ml-4 space-y-1">
       {subLinks.map((subItem) => (

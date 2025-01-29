@@ -12,7 +12,7 @@ const Banner = () => {
         {/* Text Section */}
         <div className="space-y-6 md:w-1/2">
           <h2 className="text-3xl lg:text-4xl font-bold dark:text-blue-800 text-blue-400">
-          Empowering Youth, <br/> Transforming Communities
+          Empowering Youth, <br/> Building a Better Future
           </h2>
           <div className="space-y-4">
             {/* Mission */}
