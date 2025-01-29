@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import logo from "../asset/Coat_of_arms.png";
+import logo from "../assets/yardo_logo_white.png";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -68,7 +68,7 @@ function NavBar() {
           to={subItem.href}
           className={`
             block px-3 py-2 text-sm text-white
-            hover:underline hover:decoration-green-500
+            hover:underline hover:decoration-blue-500
             transition duration-150 ease-in-out font-Poppins font-semibold
           `}
           onClick={() => handleNavClick(subItem.href)}
@@ -80,16 +80,14 @@ function NavBar() {
   );
 
   return (
-    <nav className="bg-green-950 shadow top-0 w-full max-w-[150rem] fixed z-50" aria-label="Top">
+    <nav className="bg-blue-950 shadow top-0 w-full max-w-[150rem] fixed z-50" aria-label="Top">
 
       <div className="mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
         <div className="flex w-[90%] justify-between items-center h-16">
           <div className="flex items-center lg:ml-20 justify-start">
             <NavLink to="/" className="text-xl flex flex-row justify-center items-center font-bold font-Poppins text-white">
-
               <img className="block h-8 w-auto lg:hidden" src={logo} alt="SLeSCA" />
-              <img className="hidden h-8 w-auto lg:block" src={logo} alt="SLeSCA" />
-              <p className="text-pretty md:ml-2 md:mt-2">SLeSCA</p>
+              <img className="hidden h-[3rem]  w-auto lg:block" src={logo} alt="SLeSCA" />
             </NavLink>
           </div>
 
@@ -127,11 +125,11 @@ function NavBar() {
                   to={item.href}
                   className={`
                     px-3 py-2 text-sm text-white
-                    hover:underline hover:decoration-green-500 hover:decoration-2
+                    hover:underline hover:decoration-blue-500 hover:decoration-2
                     transition duration-150 ease-in-out font-Poppins font-semibold
                     ${
                       activeNav === item.href
-                        ? "underline decoration-green-500 decoration-2"
+                        ? "underline decoration-blue-500 decoration-2"
                         : ""
                     }
                   `}
