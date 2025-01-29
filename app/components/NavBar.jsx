@@ -104,7 +104,7 @@ function NavBar() {
   );
 
   return (
-    <nav className="bg-blue-950 shadow top-0 w-full max-w-[150rem] fixed z-50" aria-label="Top">
+    <nav className="bg-blue-950 dark:bg-gray-950 shadow top-0 w-full max-w-[150rem] fixed z-50" aria-label="Top">
 
       <div className="mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
         <div className="flex w-[90%] justify-between items-center h-16">
@@ -172,7 +172,7 @@ function NavBar() {
               to='#'
               className="text-white text-sm font-bold bg-yellow-500 hover:bg-yellow-400 px-3 py-1 rounded ml-[5rem]"
             >
-              Get License
+              Make a Donation
             </Link>
           </div>
         </div>
