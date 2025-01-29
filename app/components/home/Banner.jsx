@@ -38,7 +38,7 @@ const Banner = () => {
               animationData={team}
               width={300}
               height={300}
-              loop={true}
+              loop={false}
               className="max-w-[25rem]"
             />
           </Suspense>
