@@ -15,7 +15,7 @@ const navigation = [
     ],
   },
   {
-    name: "Services",
+    name: "Our Programs",
     href: "/services",
     current: false,
     subLinks: [
@@ -27,9 +27,9 @@ const navigation = [
       { name: "Advocacy and Collaboration", href: "/advocacy-collaboration" },
     ],
   },
-  { name: "Projects", href: "/recent-projects", current: false },
+  { name: "Get Involved", href: "/recent-projects", current: false },
   {
-    name: "Documents", href: "/document", current: false,
+    name: "Success Stories", href: "/document", current: false,
     subLinks: [
       { name: "Seeds Act", href: "/document/seeds-act" },
       { name: "Policies", href: "/document/policies" },
@@ -37,7 +37,7 @@ const navigation = [
     ],
   },
   { name: "Public Notices", href: "/public-notices", current: false },
-  { name: "Legal", href: "/legal", current: false },
+  { name: "Youth Opportunities", href: "/legal", current: false },
   { name: "Contact Us", href: "/contact-us", current: false },
 ];
 
