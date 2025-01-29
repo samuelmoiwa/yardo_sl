@@ -19,7 +19,7 @@ const Banner = () => {
             <div className="flex items-start gap-4">
               <FaSeedling className="text-green-700 text-4xl" />
               <div>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 text-sm md:text-base leading-relaxed">
                 Welcome to YARDO-SL, a youth empowerment agency dedicated to creating a just and inclusive society
                 free from poverty, hunger, environmental degradation, disease, and inequality.
                 </p>

@@ -65,10 +65,22 @@ function NavBar() {
     if (typeof window !== "undefined") {
       return localStorage.getItem("theme") || "dark";
     }
-    return "dark"; // Default theme when running on the server
+    return "dark"; // Default theme
   });
 
-  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+  };
+
 
 
   const renderSubLinks = (subLinks) => (
