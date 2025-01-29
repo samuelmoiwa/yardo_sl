@@ -3,10 +3,10 @@ import bgImage from "../../images/yardo1.jpg"; // Ensure this image is available
 
 const Introduction = () => {
   return (
-    <section className="relative bg-gradient-to-br from-green-100 to-blue-50 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100 py-20 px-6 md:px-16 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-blue-100 to-blue-50 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100 py-20 px-6 md:px-16 overflow-hidden">
 
       {/* Top Decorative Elements */}
-      <div className="absolute top-0 left-0 w-32 h-32 bg-green-400 rounded-full opacity-30 blur-3xl"></div>
+      <div className="absolute top-0 left-0 w-32 h-32 bg-orange-400 rounded-full opacity-30 blur-3xl"></div>
       <div className="absolute top-10 right-10 w-20 h-20 bg-blue-400 rounded-full opacity-30 blur-2xl"></div>
 
       {/* Content Wrapper */}
@@ -46,9 +46,9 @@ const Introduction = () => {
           </p>
 
           {/* Call-to-Action Button */}
-          <button className="mt-4 bg-green-600 text-white hover:bg-green-700 px-8 py-3 font-bold text-lg rounded-lg shadow-lg transition-all transform hover:scale-105">
+          {/* <button className="mt-4 bg-blue-600 text-white hover:bg-blue-700 px-8 py-3 font-bold text-lg rounded-lg shadow-lg transition-all transform hover:scale-105">
             Our Mission
-          </button>
+          </button> */}
         </div>
 
         {/* Right Image */}
