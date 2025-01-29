@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import { FaSun, FaMoon } from "react-icons/fa";
 import logo from "../assets/yardo_logo_white.png";
 
 const navigation = [
@@ -45,6 +46,7 @@ function NavBar() {
   const location = useLocation();
   const [activeNav, setActiveNav] = useState("/");
 
+
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const handleNavClick = (href) => {
@@ -58,6 +60,16 @@ function NavBar() {
     const currentPath = location.pathname;
     setActiveNav(savedNav && savedNav === currentPath ? savedNav : currentPath);
   }, [location]);
+
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("theme") || "dark";
+    }
+    return "dark"; // Default theme when running on the server
+  });
+
+  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
+
 
   const renderSubLinks = (subLinks) => (
     <div className="ml-4 space-y-1">
@@ -90,6 +102,10 @@ function NavBar() {
               <img className="hidden h-[3rem]  w-auto lg:block" src={logo} alt="SLeSCA" />
             </NavLink>
           </div>
+
+          <button onClick={toggleTheme} className="text-white text-xl">
+            {theme === "dark" ? <FaSun /> : <FaMoon />}
+          </button>
 
           <div className="flex items-center -mr-2 lg:hidden">
             <button
@@ -152,8 +168,6 @@ function NavBar() {
             </Link>
           </div>
         </div>
-
-
 
         </div>
       </div>
