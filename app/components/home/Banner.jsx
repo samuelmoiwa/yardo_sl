@@ -1,5 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { FaSeedling, FaChartLine } from "react-icons/fa";
+import { ShootingStars } from '../ui/shooting-stars'
+import { StarsBackground } from '../ui/stars-background'
 import team from '../../lottie/team_lottie.json';
 
 // Dynamically import Lottie to ensure it only runs on the client side
@@ -42,6 +44,8 @@ const Banner = () => {
           </Suspense>
         </div>
       </div>
+      <ShootingStars />
+      <StarsBackground />
     </section>
   );
 };
