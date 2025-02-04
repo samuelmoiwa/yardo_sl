@@ -115,10 +115,4 @@ export const ShootingStars = ({
     </svg>)
   );
 
-
-
-
-
-
-  
 };
