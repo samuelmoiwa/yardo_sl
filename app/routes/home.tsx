@@ -1,6 +1,7 @@
 import type { Route } from "./+types/home";
 import Banner from '../components/home/Banner';
 import Introduction from '../components/home/Introduction';
+import OurImpactNumbers from '../components/home/OurImpactNumbers';
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -14,5 +15,6 @@ export default function Home() {
   return <>
     <Banner />
     <Introduction/>
+    <OurImpactNumbers/>
   </>
 }
