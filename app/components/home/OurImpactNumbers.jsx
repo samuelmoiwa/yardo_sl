@@ -1,6 +1,5 @@
 import React from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import { FaUsers, FaHeart, FaMapMarkedAlt, FaLayerGroup } from "react-icons/fa";
 
 const Slider = typeof window !== "undefined" ? require("react-slick").default : () => null;
@@ -97,5 +96,6 @@ const OurImpactNumbers = () => {
     </section>
   );
 };
+
 
 export default OurImpactNumbers;
