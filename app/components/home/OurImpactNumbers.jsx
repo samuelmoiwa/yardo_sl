@@ -1,8 +1,8 @@
 import React from "react";
-
 import { FaUsers, FaHeart, FaMapMarkedAlt, FaLayerGroup } from "react-icons/fa";
-
-const Slider = typeof window !== "undefined" ? require("react-slick").default : () => null;
+import Slider from "react-slick"; // Directly import Slider
+import "slick-carousel/slick/slick.css"; // Import slick carousel styles
+import "slick-carousel/slick/slick-theme.css"; // Import slick carousel theme styles
 
 const successStories = [
   {
@@ -27,7 +27,7 @@ const OurImpactNumbers = () => {
     dots: true,
     infinite: true,
     speed: 800,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3500,
@@ -67,37 +67,29 @@ const OurImpactNumbers = () => {
           <h3 className="text-3xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
             Success Stories
           </h3>
-          {typeof window !== "undefined" && Slider ? (
-            <Slider {...settings}>
-              {successStories.map((story, index) => (
-                <div key={index} className="p-4">
-                  <div className="relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition duration-500 hover:scale-105">
-                    <img
-                      src={story.image}
-                      alt={story.title}
-                      className="w-full h-60 object-cover opacity-90"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end p-6">
-                      <div className="text-left text-white">
-                        <h4 className="text-2xl font-bold">{story.title}</h4>
-                        <p className="text-lg text-gray-300">{story.description}</p>
-                      </div>
+          <Slider {...settings}>
+            {successStories.map((story, index) => (
+              <div key={index} className="p-4">
+                <div className="relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition duration-500 hover:scale-105">
+                  <img
+                    src={story.image}
+                    alt={story.title}
+                    className="w-full h-60 object-cover opacity-90"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end p-6">
+                    <div className="text-left text-white">
+                      <h4 className="text-2xl font-bold">{story.title}</h4>
+                      <p className="text-lg text-gray-300">{story.description}</p>
                     </div>
                   </div>
                 </div>
-              ))}
-            </Slider>
-          ) : (
-            <p className="text-gray-600 dark:text-gray-400">Loading carousel...</p>
-          )}
+              </div>
+            ))}
+          </Slider>
         </div>
-
       </div>
     </section>
   );
 };
-
-
-
 
 export default OurImpactNumbers;
