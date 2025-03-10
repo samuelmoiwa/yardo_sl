@@ -50,7 +50,7 @@ const Introduction = () => {
             </p>
             <a
               href="/get-involved"
-              className="inline-block dark:bg-blue-900 dark:text-gray-200 bg-blue-600 text-white px-8 py-3 rounded-sm font-semibold hover:bg-blue-700 transition duration-300 text-center"
+              className="inline-block dark:bg-blue-900 dark:hover:bg-blue-800 dark:text-gray-200 bg-blue-600 text-white px-8 py-3 rounded-sm font-semibold hover:bg-blue-700 transition duration-300 text-center"
             >
               Join the Movement
             </a>
