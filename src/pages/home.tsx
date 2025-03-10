@@ -5,10 +5,13 @@ import CoreValues from '../components/home/CoreValues';
 import OurImpactNumbers from '../components/home/OurImpactNumbers';
 
 export default function Home() {
-  return <>
+  return (
+    <div className="w-full flex flex-col justify-center items-center bg-gradient-to-br from-blue-100 to-indigo-50
+    dark:from-gray-900 dark:to-indigo-950 bg-center bg-cover bg-no-repeat lg:pb-0 pb-10 relative overflow-hidden">
     <Banner />
     <Introduction/>
     <CoreValues />
     <OurImpactNumbers/>
-  </>
+  </div>
+  );
 }

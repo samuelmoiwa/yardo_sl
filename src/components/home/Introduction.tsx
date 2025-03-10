@@ -32,8 +32,7 @@ const Introduction = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col justify-center items-center bg-gradient-to-br from-blue-100 to-indigo-50
-      dark:from-gray-900 dark:to-indigo-950 bg-center bg-cover bg-no-repeat lg:pb-0 pb-10 relative overflow-hidden">
+    <div className="w-full flex flex-col justify-center items-center ">
       <div className="lg:w-3/4 w-full max-w-[60rem] grid sm:grid-cols-3 lg:px-0 px-4 pt-16 gap-6 relative z-10 lg:mb-16">
         {/* Left Column */}
         <div className="mt-0 w-full gap-5">
