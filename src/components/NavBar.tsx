@@ -76,7 +76,7 @@ const NavBar: React.FC = () => {
   }, [location]);
 
   const [theme, setTheme] = useState<string>(() => {
-    return localStorage.getItem("theme") || "dark";
+    return localStorage.getItem("theme") || "light";
   });
 
   // Apply theme on initial load
