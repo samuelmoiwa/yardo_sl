@@ -3,7 +3,20 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { FaSun, FaMoon } from "react-icons/fa";
 import logo from "../assets/yardo_logo_white.png";
 
-const navigation = [
+// Define types for navigation items
+interface NavItem {
+  name: string;
+  href: string;
+  current: boolean;
+  subLinks?: SubLink[];
+}
+
+interface SubLink {
+  name: string;
+  href: string;
+}
+
+const navigation: NavItem[] = [
   { name: "Home", href: "/", current: true },
   {
     name: "About Us",
@@ -29,7 +42,9 @@ const navigation = [
   },
   { name: "Get Involved", href: "/recent-projects", current: false },
   {
-    name: "Success Stories", href: "/document", current: false,
+    name: "Success Stories",
+    href: "/document",
+    current: false,
     subLinks: [
       { name: "Seeds Act", href: "/document/seeds-act" },
       { name: "Policies", href: "/document/policies" },
@@ -41,15 +56,14 @@ const navigation = [
   { name: "Contact Us", href: "/contact-us", current: false },
 ];
 
-function NavBar() {
-  const [isOpen, setIsOpen] = useState(false);
+const NavBar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const location = useLocation();
-  const [activeNav, setActiveNav] = useState("/");
+  const [activeNav, setActiveNav] = useState<string>("/");
 
+  const toggleMenu = () => setIsOpen((prev) => !prev);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
-
-  const handleNavClick = (href) => {
+  const handleNavClick = (href: string) => {
     localStorage.setItem("currentNav", href);
     setActiveNav(href);
     setIsOpen(false);
@@ -61,7 +75,7 @@ function NavBar() {
     setActiveNav(savedNav && savedNav === currentPath ? savedNav : currentPath);
   }, [location]);
 
-  const [theme, setTheme] = useState(() => {
+  const [theme, setTheme] = useState<string>(() => {
     if (typeof window !== "undefined") {
       return localStorage.getItem("theme") || "dark";
     }
@@ -81,35 +95,43 @@ function NavBar() {
     setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
   };
 
-  const renderSubLinks = (subLinks) => (
-    <div className="ml-4 space-y-1">
-      {subLinks.map((subItem) => (
-        <NavLink
-          key={subItem.name}
-          exact
-          to={subItem.href}
-          className={`
-            block px-3 py-2 text-sm text-white
-            hover:underline hover:decoration-blue-500
-            transition duration-150 ease-in-out font-Poppins font-semibold
-          `}
-          onClick={() => handleNavClick(subItem.href)}
-        >
-          {subItem.name}
-        </NavLink>
-      ))}
-    </div>
-  );
+  const renderSubLinks = (subLinks: SubLink[] | undefined) => {
+    if (!subLinks) return null;
+    return (
+      <div className="ml-4 space-y-1">
+        {subLinks.map((subItem) => (
+          <NavLink
+            key={subItem.name}
+            to={subItem.href}
+            exact
+            className={`
+              block px-3 py-2 text-sm text-white
+              hover:underline hover:decoration-blue-500
+              transition duration-150 ease-in-out font-Poppins font-semibold
+            `}
+            onClick={() => handleNavClick(subItem.href)}
+          >
+            {subItem.name}
+          </NavLink>
+        ))}
+      </div>
+    );
+  };
 
   return (
-    <nav className="bg-blue-950 dark:bg-gray-950 shadow top-0 w-full max-w-[150rem] fixed z-50" aria-label="Top">
-
+    <nav
+      className="bg-blue-950 dark:bg-gray-950 shadow top-0 w-full max-w-[150rem] fixed z-50"
+      aria-label="Top"
+    >
       <div className="mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
         <div className="flex w-[90%] justify-between items-center h-16">
           <div className="flex items-center lg:ml-20 justify-start">
-            <NavLink to="/" className="text-xl flex flex-row justify-center items-center font-bold font-Poppins text-white">
+            <NavLink
+              to="/"
+              className="text-xl flex flex-row justify-center items-center font-bold font-Poppins text-white"
+            >
               <img className="block h-8 w-auto lg:hidden" src={logo} alt="SLeSCA" />
-              <img className="hidden h-[3rem]  w-auto lg:block" src={logo} alt="SLeSCA" />
+              <img className="hidden h-[3rem] w-auto lg:block" src={logo} alt="SLeSCA" />
             </NavLink>
           </div>
 
@@ -137,49 +159,46 @@ function NavBar() {
             </button>
           </div>
 
-
-        <div className="w-full hidden lg:flex lg:items-center justify-center ">
-          <div className="hidden lg:flex lg:items-center justify-center lg:ml-6 ">
-            {navigation.map((item) => (
-              <div key={item.name} className="relative group">
-                <NavLink
-                  exact
-                  to={item.href}
-                  className={`
-                    px-3 py-2 text-sm text-white
-                    hover:underline hover:decoration-blue-500 hover:decoration-2
-                    transition duration-150 ease-in-out font-Poppins font-semibold
-                    ${
-                      activeNav === item.href
-                        ? "underline decoration-blue-500 decoration-2"
-                        : ""
-                    }
-                  `}
-                  onClick={() => handleNavClick(item.href)}
-                >
-                  {item.name}
-                </NavLink>
-                {item.subLinks && (
-                  <div className="absolute hidden group-hover:block bg-gray-800 shadow-lg p-2 mt-2 rounded">
-                    {renderSubLinks(item.subLinks)}
-                  </div>
-                )}
-              </div>
-            ))}
-            <Link
-              to='#'
-              className="text-white text-sm font-bold bg-yellow-500 hover:bg-yellow-400 px-3 py-1 rounded ml-[5rem]"
-            >
-              Make a Donation
-            </Link>
+          <div className="w-full hidden lg:flex lg:items-center justify-center">
+            <div className="hidden lg:flex lg:items-center justify-center lg:ml-6">
+              {navigation.map((item) => (
+                <div key={item.name} className="relative group">
+                  <NavLink
+                    to={item.href}
+                    exact
+                    className={`
+                      px-3 py-2 text-sm text-white
+                      hover:underline hover:decoration-blue-500 hover:decoration-2
+                      transition duration-150 ease-in-out font-Poppins font-semibold
+                      ${
+                        activeNav === item.href
+                          ? "underline decoration-blue-500 decoration-2"
+                          : ""
+                      }
+                    `}
+                    onClick={() => handleNavClick(item.href)}
+                  >
+                    {item.name}
+                  </NavLink>
+                  {item.subLinks && (
+                    <div className="absolute hidden group-hover:block bg-gray-800 shadow-lg p-2 mt-2 rounded">
+                      {renderSubLinks(item.subLinks)}
+                    </div>
+                  )}
+                </div>
+              ))}
+              <Link
+                to="#"
+                className="text-white text-sm font-bold bg-yellow-500 hover:bg-yellow-400 px-3 py-1 rounded ml-[5rem]"
+              >
+                Make a Donation
+              </Link>
+            </div>
           </div>
-        </div>
 
-
-        <button onClick={toggleTheme} className="text-white text-xl">
+          <button onClick={toggleTheme} className="text-white text-xl">
             {theme === "dark" ? <FaSun /> : <FaMoon />}
           </button>
-
         </div>
       </div>
 
@@ -189,8 +208,8 @@ function NavBar() {
             {navigation.map((item) => (
               <div key={item.name}>
                 <NavLink
-                  exact
                   to={item.href}
+                  exact
                   className={`
                     block px-3 py-2 text-sm text-white
                     hover:underline hover:decoration-blue-500
@@ -211,9 +230,8 @@ function NavBar() {
           </div>
         </div>
       )}
-
     </nav>
   );
-}
+};
 
 export default NavBar;

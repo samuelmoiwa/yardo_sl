@@ -9,7 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
-import NavBar from './components/NavBar.jsx'
+import NavBar from './components/NavBar.js'
 
 
 export const links: Route.LinksFunction = () => [
