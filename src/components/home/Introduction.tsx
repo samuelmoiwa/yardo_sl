@@ -34,11 +34,11 @@ const Introduction = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center bg-gradient-to-br from-blue-100 to-indigo-50
       dark:from-gray-900 dark:to-indigo-950 bg-center bg-cover bg-no-repeat lg:pb-0 pb-10 relative overflow-hidden">
-      <div className="lg:w-3/4 w-full max-w-[70rem] grid sm:grid-cols-3 lg:px-0 px-4 pt-16 gap-6 relative z-10 lg:mb-16">
+      <div className="lg:w-3/4 w-full max-w-[60rem] grid sm:grid-cols-3 lg:px-0 px-4 pt-16 gap-6 relative z-10 lg:mb-16">
         {/* Left Column */}
         <div className="mt-0 w-full gap-5">
           <div className="flex flex-col justify-start">
-            <h1 className="text-start text-blue-900 sm:pt-[8rem] font-poppins font-bold sm:text-4xl text-2xl">
+            <h1 className="text-start dark:text-blue-600 text-blue-900 sm:pt-[8rem] font-poppins font-bold sm:text-4xl text-2xl">
               <span className="text-orange-500 font-mono text-lg">WELCOME TO</span> <br />
               YARDO-SL
             </h1>
