@@ -15,7 +15,7 @@ const Card = ({ icon, heading, details }) => (
 const OurPrinciples = () => {
   return (
     <div className='w-full flex flex-col justify-center items-center'>
-        <div className='w-full flex lg:flex-row flex-col lg:mt-10 mt-0 max-w-[90rem]'>
+        <div className='w-full flex lg:flex-row flex-col lg:mt-10 mt-0 max-w-[80rem]'>
         <div className="lg:w-1/2 w-full grid sm:grid-cols-2 sm:grid-rows-2 lg:px-0 px-4">
             <div className="flex flex-col justify-start">
             <h1 className='text-start text-blue-950 sm:pt-[10rem] font-poppins font-bold sm:text-3xl text-xl'>
