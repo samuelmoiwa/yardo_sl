@@ -76,24 +76,26 @@ const NavBar: React.FC = () => {
   }, [location]);
 
   const [theme, setTheme] = useState<string>(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") || "dark";
-    }
-    return "dark";
+    return localStorage.getItem("theme") || "dark";
   });
 
+  // Apply theme on initial load
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
     } else {
+      document.documentElement.classList.add("light");
       document.documentElement.classList.remove("dark");
     }
     localStorage.setItem("theme", theme);
   }, [theme]);
 
+  // Toggle theme function
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
   };
+
 
   const renderSubLinks = (subLinks: SubLink[] | undefined) => {
     if (!subLinks) return null;
