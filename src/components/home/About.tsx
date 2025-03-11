@@ -40,12 +40,12 @@ const About =()=> {
 
                 <div className='sm:w-1/2 w-full px-3 font-Poppins sm:mt-0 mt-2'>
                   <h1 className='text-orange-500 font-mono'>ABOUT US</h1>
-                  <h2 className='lg:py-10 py-5 text-blue-950 font-bold text-2xl'>Welcome to IMO-Technology</h2>
-                  <p className='pb-10 text-gray-700 font-semibold text-xl'>
+                  <h2 className='lg:py-10 py-5 text-blue-950 dark:text-blue-500 font-bold text-2xl'>Welcome to IMO-Technology</h2>
+                  <p className='pb-10 text-gray-700 dark:text-gray-300 font-semibold text-xl'>
                     Where innovation meets excellence in software <br/> solutions.
                   </p>
 
-                  <p className='text-lg text-gray-700 font-Archivo max-w-[30rem] '>
+                  <p className='text-lg text-gray-700 dark:text-gray-300 font-Archivo max-w-[30rem] '>
                     We are a passionate team of tech enthusiasts dedicated to transforming ideas into
                     impactful digital experiences. At IMO-Tech, we believe in pushing the boundaries
                     of what’s possible, delivering cutting-edge solutions tailored to meet the unique
