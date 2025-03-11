@@ -5,10 +5,10 @@ import { faLeaf, faHandsHelping, faLightbulb } from '@fortawesome/free-solid-svg
 import back_1 from '../../assets/back_1.png';
 
 const Card = ({ icon, heading, details }) => (
-  <div className="flex flex-col items-center text-center p-6 shadow-xl shadow-blue-200 rounded-br-[5rem] bg-white m-4 ">
+  <div className="flex flex-col items-center text-center p-6 shadow-xl shadow-blue-200 dark:shadow-blue-900 rounded-br-[5rem] dark:bg-gray-700 bg-white m-4 ">
     {icon}
-    <h2 className="text-xl font-bold text-blue-900 mt-2">{heading}</h2>
-    <p className="text-gray-700 mt-2">{details}</p>
+    <h2 className="text-xl font-bold text-blue-900 dark:text-blue-500 mt-2">{heading}</h2>
+    <p className="text-gray-700 dark:text-gray-300 mt-2">{details}</p>
   </div>
 );
 
