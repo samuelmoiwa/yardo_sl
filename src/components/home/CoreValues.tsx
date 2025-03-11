@@ -18,10 +18,10 @@ const OurPrinciples = () => {
         <div className='w-full flex lg:flex-row flex-col lg:mt-10 mt-0 max-w-[80rem]'>
         <div className="lg:w-1/2 w-full grid sm:grid-cols-2 sm:grid-rows-2 lg:px-0 px-4">
             <div className="flex flex-col justify-start">
-            <h1 className='text-start text-blue-950 sm:pt-[10rem] font-poppins font-bold sm:text-3xl text-xl'>
+            <h1 className='text-start text-blue-950 dark:text-blue-500 sm:pt-[10rem] font-poppins font-bold sm:text-3xl text-xl'>
                 Our Guiding Principles
             </h1>
-            <p className="text-gray-700 lg:text-base text-sm text-start sm:py-0 py-6">
+            <p className="text-gray-700 dark:text-gray-300 lg:text-base text-sm text-start sm:py-0 py-6">
                 At Yardo, our principles drive us forward, ensuring sustainability, integrity, and innovation in every step we take.
             </p>
             </div>
@@ -43,11 +43,11 @@ const OurPrinciples = () => {
             />
         </div>
 
-        <div className='lg:w-1/2 bg-cover bg-center bg-no-repeat sm:px-0 px-3 lg:py-0 py-10' style={{ backgroundImage: `url(${back_1})` }}>
-            <h1 className='text-center text-blue-950 py-10 font-poppins font-bold sm:text-3xl text-xl'>
+        <div className='lg:w-1/2 bg-cover bg-center bg-no-repeat  sm:px-0 px-3 lg:py-0 py-10' style={{ backgroundImage: `url(${back_1})` }}>
+            <h1 className='text-center text-blue-950 dark:text-blue-500 py-10 font-poppins font-bold sm:text-3xl text-xl'>
             Why Partner with Yardo?
             </h1>
-            <p className='sm:px-10 text-gray-600 font-Poppins text-xl'>
+            <p className='sm:px-10 text-gray-600 font-Poppins text-xl dark:text-gray-300'>
             Join Yardo for sustainable impact, community-driven initiatives, and a commitment to innovation that drives meaningful change.
             </p>
 
@@ -62,11 +62,11 @@ const OurPrinciples = () => {
             description: "We embrace new ideas and technologies to create sustainable and lasting solutions."
             }].map((item, index) => (
             <p key={index} className='flex flex-row mt-5 ml-7'>
-                <svg className="w-14 h-14 text-blue-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-14 h-14 text-blue-900 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                 <path fillRule="evenodd" d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm13.7-1.3a1 1 0 0 0-1.4-1.4L11 12.6l-1.8-1.8a1 1 0 0 0-1.4 1.4l2.5 2.5c.4.4 1 .4 1.4 0l4-4Z" clipRule="evenodd"/>
                 </svg>
-                <p className='sm:px-5 text-gray-500 font-Poppins text-lg'>
-                <span className='text-blue-950 font-medium'>{item.title}</span> <br/>
+                <p className='sm:px-5 text-gray-500 dark:text-gray-300 font-Poppins text-lg'>
+                <span className='text-blue-950 dark:text-blue-500 font-medium'>{item.title}</span> <br/>
                 {item.description}
                 </p>
             </p>
