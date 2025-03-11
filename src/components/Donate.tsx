@@ -10,12 +10,12 @@ const Donate = () => {
      },
    ];
    return (
-     (<div className="flex flex-col items-center justify-center bg-blue-900 w-full py-10">
+     (<div className="flex flex-col items-center justify-center bg-blue-900 dark:bg-gray-900 w-full py-10">
 
        <TypewriterEffectSmooth words={words} className={undefined} cursorClassName={undefined} />
        <Link
        to='#'
-       className="bg-white text-green-900 px-12 py-2 rounded-sm hover:font-bold"
+       className="bg-white text-blue-900 px-12 py-2 rounded-sm hover:font-bold hover:cursor-pointer"
        >
         Donate
        </Link>

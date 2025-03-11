@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
-
 import amied_1 from '../../images/amied_1.png';
 import home_img_figure from '../../images/home_img_figure.png';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { twMerge } from 'tailwind-merge';
@@ -13,14 +11,13 @@ const About = () => {
     const initAOS = () => {
       setTimeout(() => {
         AOS.init({
-          delay: 400, // Delay before animations start (in milliseconds)
-          duration: 1000, // Duration of the animation (in milliseconds)
-          once: true, // Repeats animation when scrolling back up
-          offset: 100, // Offset (in pixels) from the original trigger point
+          delay: 400,
+          duration: 1000,
+          once: true,
+          offset: 100,
         });
-      }, 1000); // Delay before initializing AOS (in milliseconds)
+      }, 1000);
     };
-
     initAOS();
   }, []);
 
@@ -44,25 +41,23 @@ const About = () => {
         </div>
 
         <div className="sm:w-1/2 w-full px-3 font-Poppins sm:mt-0 mt-2">
-          <h1 className="text-orange-500 font-mono">ABOUT US</h1>
+          <h1 className="text-orange-500 font-mono">WHO WE ARE</h1>
           <h2 className="lg:py-10 py-5 text-blue-950 dark:text-blue-500 font-bold text-2xl">
-            Welcome to YARDO-SL
+            YARDO-SL: A Youth-Led Vision
           </h2>
           <p className="pb-10 text-gray-700 dark:text-gray-300 font-semibold text-xl">
-            Empowering Sierra Leonean youth for a better tomorrow.
+            Championing change since 2014.
           </p>
-
           <p className="text-lg text-gray-700 dark:text-gray-300 font-Archivo max-w-[30rem]">
-            Founded in 2014, YARDO-SL is a registered youth empowerment agency committed to creating a just and inclusive society. We work tirelessly with over 300 active volunteers and reputable partners like the Ministry of Agriculture, UNDP, and GOAL to address poverty, hunger, environmental challenges, and inequality through innovative grassroots initiatives.
+            YARDO-SL is a registered youth empowerment agency born in 2014, dedicated to breaking barriers of poverty and inequality in Sierra Leone. With a vibrant network of over 300 volunteers, we’re shaping a future where every young person can thrive.
           </p>
-
           <Link
             to="/about"
             className="relative inline-flex h-12 overflow-hidden rounded-sm p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 my-10"
           >
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
             <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-sm px-5 hover:bg-gray-800 bg-gray-50 py-1 text-sm font-medium hover:text-white text-gray-700 backdrop-blur-3xl">
-              More About Us
+              Discover Our Story
             </span>
           </Link>
         </div>

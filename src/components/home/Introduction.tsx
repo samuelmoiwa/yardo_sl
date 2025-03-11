@@ -1,7 +1,7 @@
 import React, { useEffect, lazy, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLeaf, faHandsHelping, faUsers } from '@fortawesome/free-solid-svg-icons';
-import bgImage from "../../images/yardo1.jpg";
+import bgImage from '../../images/yardo1.jpg';
 
 const Lottie = lazy(() => import('lottie-react'));
 
@@ -13,8 +13,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ icon, heading, details }) => {
   return (
-    <div className="flex flex-col justify-center items-center max-w-sm w-full overflow-hidden mt-5 p-4 dark:bg-gray-700
-    bg-white rounded-lg hover:shadow-xl transition-all duration-300 cursor-pointer py-8">
+    <div className="flex flex-col justify-center items-center max-w-sm w-full overflow-hidden mt-5 p-4 dark:bg-gray-700 bg-white rounded-lg hover:shadow-xl transition-all duration-300 cursor-pointer py-8">
       <div className="flex justify-center">{icon}</div>
       <div className="flex flex-col justify-center items-start px-6 py-4">
         <div className="font-bold lg:text-xl text-sm mb-2 text-start dark:text-blue-200 text-blue-900">{heading}</div>
@@ -32,7 +31,7 @@ const Introduction = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col justify-center items-center ">
+    <div className="w-full flex flex-col justify-center items-center">
       <div className="lg:w-3/4 w-full max-w-[60rem] grid sm:grid-cols-3 lg:px-0 px-4 pt-16 gap-6 relative z-10 lg:mb-16">
         {/* Left Column */}
         <div className="mt-0 w-full gap-5">
@@ -42,16 +41,16 @@ const Introduction = () => {
               YARDO-SL
             </h1>
             <p className="text-gray-700 dark:text-gray-300 lg:text-base text-sm text-start sm:py-6 py-4">
-              Founded in 2014, YARDO-SL is a registered youth empowerment agency dedicated to breaking the cycle of poverty in Sierra Leone.
+              Since 2014, we’ve been empowering Sierra Leone’s youth to break barriers and build a brighter future.
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mt-6">
-              With over <strong className="text-blue-600">300 active volunteers</strong> and partnerships with the Ministry of Agriculture, UNDP GEF SGP, and more, we’re driving sustainable change at the grassroots level.
+              Backed by <strong className="text-blue-600">300+ volunteers</strong> and partners like GOAL and the Environmental Protection Agency, we’re creating sustainable solutions nationwide.
             </p>
             <a
               href="/get-involved"
               className="inline-block dark:bg-blue-900 dark:hover:bg-blue-800 dark:text-gray-200 bg-blue-600 text-white px-8 py-3 rounded-sm font-semibold hover:bg-blue-700 transition duration-300 text-center"
             >
-              Join the Movement
+              Get Involved
             </a>
           </div>
         </div>
@@ -61,17 +60,12 @@ const Introduction = () => {
           <Card
             icon={<FontAwesomeIcon icon={faLeaf} className="text-5xl text-green-600 mb-4" />}
             heading="Agriculture"
-            details="YARDO-SL is committed to sustainable agricultural practices that empower youth and local farmers.
-            Through training programs, funding opportunities, and modernized farming techniques, we aim to enhance food
-            security and economic stability. Our initiatives include organic farming, agro-processing, and providing
-            access to market resources for young entrepreneurs in the agriculture sector."
+            details="We equip young farmers with skills and resources to boost food security and economic growth through sustainable farming and agro-processing."
           />
           <Card
             icon={<FontAwesomeIcon icon={faHandsHelping} className="text-5xl text-yellow-600 mb-4" />}
-            heading="Governance"
-            details="Our governance programs focus on leadership development, civic education, and advocacy for policy
-            reforms that benefit young people. We work closely with government institutions and civil society
-            organizations to promote transparency, accountability, and inclusive decision-making."
+            heading="Public Health"
+            details="Our youth-led health initiatives promote wellness, combat disease, and improve access to care in underserved communities."
           />
         </div>
 
@@ -79,12 +73,8 @@ const Introduction = () => {
         <div className="mt-14 gap-5">
           <Card
             icon={<FontAwesomeIcon icon={faUsers} className="text-5xl text-red-600 mb-4" />}
-            heading="Community Impact"
-            details="At the heart of YARDO-SL's mission is community transformation. We organize youth-led initiatives
-            that address local challenges such as education, healthcare, and climate change. Our programs include skill
-            development workshops, environmental sustainability projects, and social welfare programs that uplift
-            underprivileged communities. By fostering a spirit of volunteerism and collaboration, we create lasting
-            positive change."
+            heading="Environmental Protection"
+            details="We inspire youth to lead climate action—tackling hazards and fostering sustainability through community-driven projects."
           />
           <div className="flex justify-center mt-5">
             <img

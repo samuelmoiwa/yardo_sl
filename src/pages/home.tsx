@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../components/home/Banner';
 import Introduction from '../components/home/Introduction';
-import CoreValues from '../components/home/CoreValues';
+import OurPrinciples from '../components/home/OurPrinciples';
 import About from '../components/home/About'
 import Donate from '../components/Donate';
 
@@ -15,7 +15,7 @@ export default function Home() {
       <Introduction/>
       <About />
       <Donate />
-      <CoreValues />
+      <OurPrinciples />
       </div>
     </div>
 
