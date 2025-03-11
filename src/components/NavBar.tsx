@@ -120,10 +120,11 @@ const NavBar: React.FC = () => {
 
 
   return (
-    <nav
-      className="bg-blue-950 dark:bg-gray-950 shadow top-0 w-full max-w-[150rem] fixed z-50"
+    <div className='w-full flex flex-col justify-center items-center bg-white dark:bg-slate-900'>
+      <nav
+      className="bg-blue-950 dark:bg-gray-950 shadow top-0 w-full max-w-[110rem] fixed z-50"
       aria-label="Top"
-    >
+      >
       <div className="mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
         <div className="flex w-[90%] justify-between items-center h-16">
           <div className="flex items-center lg:ml-20 justify-start">
@@ -213,6 +214,8 @@ const NavBar: React.FC = () => {
         </div>
       </div>
     </nav>
+    </div>
+
   );
 };
 
