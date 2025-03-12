@@ -7,6 +7,7 @@ import Donate from '../components/Donate';
 import FeaturedImpact from '../components/home/FeaturedImpact';
 import LatestNews from '../components/home/LatestNews';
 import TestimonialSlider from '../components/home/TestimonialSlider';
+import CallToAction from '../components/CallToAction';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <FeaturedImpact />
         <LatestNews />
         <TestimonialSlider />
+        <CallToAction />
       </div>
     </div>
 
