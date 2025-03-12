@@ -28,7 +28,7 @@ const TestimonialSlider = () => {
   const slideVariants = {
     enter: { opacity: 0, x: 100 },
     center: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: -100 },
+    exit: { opacity: 0, x: 100 },
   };
 
   return (
@@ -57,7 +57,6 @@ const TestimonialSlider = () => {
               variants={slideVariants}
               initial="enter"
               animate="center"
-              exit="exit"
               transition={{ duration: 0.5, ease: 'easeInOut' }}
               className="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8 flex flex-col md:flex-row items-center"
             >
