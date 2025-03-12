@@ -12,7 +12,7 @@ const Banner = () => {
 
   return (
     <section className="w-full flex justify-center items-center py-12 dark:bg-gray-950 bg-blue-950">
-      <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row-reverse items-center gap-8 h-[30rem] max-w-[90rem]">
+      <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row-reverse items-center sm:mt-[0rem] mt-[3rem] gap-8 sm:h-[30rem] max-w-[90rem]">
         {/* Text Section */}
         <div className="space-y-6 md:w-1/2">
           <h2 className="text-3xl lg:text-4xl font-bold dark:text-blue-800 text-blue-400">
