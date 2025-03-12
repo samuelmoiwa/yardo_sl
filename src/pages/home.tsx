@@ -4,6 +4,9 @@ import Introduction from '../components/home/Introduction';
 import OurPrinciples from '../components/home/OurPrinciples';
 import About from '../components/home/About'
 import Donate from '../components/Donate';
+import FeaturedImpact from '../components/home/FeaturedImpact';
+import LatestNews from '../components/home/LatestNews';
+import TestimonialSlider from '../components/home/TestimonialSlider';
 
 export default function Home() {
   return (
@@ -11,11 +14,14 @@ export default function Home() {
       <div className="w-full flex flex-col justify-center items-center bg-gradient-to-br from-blue-100 to-indigo-50
       dark:from-gray-900 dark:to-indigo-950 bg-center bg-cover bg-no-repeat lg:pb-0 pb-10 relative overflow-hidden
       max-w-[110rem]">
-      <Banner />
-      <Introduction/>
-      <About />
-      <Donate />
-      <OurPrinciples />
+        <Banner />
+        <Introduction/>
+        <About />
+        <Donate />
+        <OurPrinciples />
+        <FeaturedImpact />
+        <LatestNews />
+        <TestimonialSlider />
       </div>
     </div>
 
