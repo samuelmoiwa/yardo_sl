@@ -29,30 +29,23 @@ const navigation: NavItem[] = [
   },
   {
     name: "Our Programs",
-    href: "/services",
+    href: "/programs",
     current: false,
     // subLinks: [
     //   { name: "Seed Quality Certification", href: "/services/quality-certification" },
-    //   { name: "Training and Workshops", href: "/services/training-workshops" },
-    //   { name: "Seed License Procedures", href: "/about/license-procedures" },
-    //   { name: "Renewal of Seed License", href: "/about/renewal-license" },
-    //   { name: "Farmer Training and Capacity Building", href: "/farmer-training" },
-    //   { name: "Advocacy and Collaboration", href: "/advocacy-collaboration" },
     // ],
   },
   {
     name: "Success Stories",
-    href: "/document",
+    href: "/success_stories",
     current: false,
     // subLinks: [
     //   { name: "Seeds Act", href: "/document/seeds-act" },
-    //   { name: "Policies", href: "/document/policies" },
-    //   { name: "⁠⁠Regulatory and Compliance", href: "/services/regulatory-compliance" },
     // ],
   },
-  { name: "Public Notices", href: "/public-notices", current: false },
-  { name: "Youth Opportunities", href: "/legal", current: false },
-  { name: "Contact Us", href: "/contact-us", current: false },
+  { name: "Public Notices", href: "/public_notices", current: false },
+  { name: "Youth Opportunities", href: "/youth_opportunities", current: false },
+  { name: "Contact Us", href: "/contact_us", current: false },
 ];
 
 const NavBar: React.FC = () => {
