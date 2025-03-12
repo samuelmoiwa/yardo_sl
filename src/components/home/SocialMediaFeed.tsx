@@ -93,7 +93,7 @@ const SocialMediaFeed = () => {
         {/* Follow Button */}
         <div className="text-center mt-10">
           <a
-            href="https://x.com/YARDOSL"
+            href="https://www.facebook.com/yardosl"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition-all duration-300 shadow-md hover:shadow-lg"
