@@ -32,7 +32,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="w-full flex flex-col justify-center items-center py-16 bg-gradient-to-b from-gray-100 to-white dark:from-gray-900 dark:to-gray-800">
+    <div className="w-full flex flex-col justify-center items-center py-16 bg-gradient-to-b from-blue-100 to-white dark:from-gray-900 dark:to-gray-800">
       <div className="max-w-[80rem] w-full px-4">
         {/* Heading Section */}
         <motion.div
