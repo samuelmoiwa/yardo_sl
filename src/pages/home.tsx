@@ -9,6 +9,8 @@ import LatestNews from '../components/home/LatestNews';
 import TestimonialSlider from '../components/home/TestimonialSlider';
 import CallToAction from '../components/CallToAction';
 import PartnersHighlight from '../components/home/PartnersHighlight';
+import QuickStats from '../components/home/QuickStats';
+import SocialMediaFeed from '../components/home/SocialMediaFeed';
 
 export default function Home() {
   return (
@@ -26,6 +28,8 @@ export default function Home() {
         <TestimonialSlider />
         <CallToAction />
         <PartnersHighlight />
+        <QuickStats />
+        <SocialMediaFeed />
       </div>
     </div>
 

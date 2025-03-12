@@ -7,6 +7,7 @@
     "axe/name-role-value": "off",
     "axe/forms": "off",
     "compat-api/html": "off",
-    "button-type": "off"
+    "button-type": "off",
+    "disown-opener": "off"
   }
 }
