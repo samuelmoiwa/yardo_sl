@@ -8,6 +8,7 @@ import FeaturedImpact from '../components/home/FeaturedImpact';
 import LatestNews from '../components/home/LatestNews';
 import TestimonialSlider from '../components/home/TestimonialSlider';
 import CallToAction from '../components/CallToAction';
+import PartnersHighlight from '../components/home/PartnersHighlight';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <LatestNews />
         <TestimonialSlider />
         <CallToAction />
+        <PartnersHighlight />
       </div>
     </div>
 
