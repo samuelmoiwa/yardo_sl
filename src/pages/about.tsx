@@ -3,6 +3,7 @@ import Sub from '../components/Sub'
 import HeroSection from '../components/about/HeroSection'
 import OurStory from '../components/about/OurStory'
 import MissionVision from '../components/about/MissionVision'
+import Partners from '../components/about/Partners'
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
         <HeroSection />
         <OurStory />
         <MissionVision />
+        <Partners />
 
       </div>
     </div>
