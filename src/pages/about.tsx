@@ -4,6 +4,9 @@ import HeroSection from '../components/about/HeroSection'
 import OurStory from '../components/about/OurStory'
 import MissionVision from '../components/about/MissionVision'
 import Partners from '../components/about/Partners'
+import TeamHighlight from '../components/about/TeamHighlight'
+import ImpactStats from '../components/about/ImpactStats'
+import Timeline from '../components/about/Timeline'
 
 const About = () => {
   return (
@@ -16,7 +19,9 @@ const About = () => {
         <OurStory />
         <MissionVision />
         <Partners />
-
+        <TeamHighlight />
+        <ImpactStats />
+        <Timeline />
       </div>
     </div>
   )
