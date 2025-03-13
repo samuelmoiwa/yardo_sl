@@ -35,14 +35,6 @@ const navigation: NavItem[] = [
     //   { name: "Seed Quality Certification", href: "/services/quality-certification" },
     // ],
   },
-  {
-    name: "Success Stories",
-    href: "/success_stories",
-    current: false,
-    // subLinks: [
-    //   { name: "Seeds Act", href: "/document/seeds-act" },
-    // ],
-  },
   { name: "Public Notices", href: "/public_notices", current: false },
   { name: "Youth Opportunities", href: "/youth_opportunities", current: false },
   { name: "Contact Us", href: "/contact_us", current: false },

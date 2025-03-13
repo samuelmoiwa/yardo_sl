@@ -114,5 +114,5 @@ export const StarsBackground: React.FC<StarsBackgroundProps> = ({
     };
   }, [stars]);
 
-  return <canvas ref={canvasRef} className={cn("h-full w-full absolute inset-0", className)} />;
+  return <canvas ref={canvasRef} className={cn("h-[30rem] w-full absolute inset-0", className)} />;
 };

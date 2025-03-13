@@ -5,7 +5,6 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import About from './pages/about';
 import Programs from './pages/programs';
-import SuccessStories from './pages/success_stories';
 import PublicNotices from './pages/public_notices';
 import YouthOpportunities from './pages/youth_opportunities';
 import ContactUs from './pages/contact_us';
@@ -19,7 +18,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/programs" element={<Programs />} />
-          <Route path="/success_stories" element={<SuccessStories />} />
           <Route path="/public_notices" element={<PublicNotices />} />
           <Route path="/youth_opportunities" element={<YouthOpportunities />} />
           <Route path="/contact_us" element={<ContactUs />} />
