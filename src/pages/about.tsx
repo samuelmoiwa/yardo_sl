@@ -1,6 +1,8 @@
 import React from 'react'
 import Sub from '../components/Sub'
 import HeroSection from '../components/about/HeroSection'
+import OurStory from '../components/about/OurStory'
+import MissionVision from '../components/about/MissionVision'
 
 const About = () => {
   return (
@@ -9,8 +11,9 @@ const About = () => {
         dark:from-gray-900 dark:to-indigo-950 bg-center bg-cover bg-no-repeat lg:pb-0 pb-10 relative overflow-hidden
         max-w-[110rem]"
       >
-
         <HeroSection />
+        <OurStory />
+        <MissionVision />
 
       </div>
     </div>
