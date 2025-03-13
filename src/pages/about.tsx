@@ -7,6 +7,9 @@ import Partners from '../components/about/Partners'
 import TeamHighlight from '../components/about/TeamHighlight'
 import ImpactStats from '../components/about/ImpactStats'
 import Timeline from '../components/about/Timeline'
+import Donate from '../components/Donate'
+import TestimonialSlider from '../components/home/TestimonialSlider'
+import CallToAction from '../components/CallToAction'
 
 const About = () => {
   return (
@@ -20,8 +23,11 @@ const About = () => {
         <MissionVision />
         <Partners />
         <TeamHighlight />
+        <CallToAction />
         <ImpactStats />
         <Timeline />
+        <Donate />
+        <TestimonialSlider />
       </div>
     </div>
   )
