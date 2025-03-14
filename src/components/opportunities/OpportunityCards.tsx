@@ -40,7 +40,7 @@ const OpportunityCards: React.FC = () => {
   };
 
   return (
-    <div className="w-full py-16 bg-gray-50 dark:bg-gray-800">
+    <div className="w-full py-16">
       <div className="max-w-[1200px] w-full mx-auto px-4">
         <motion.div
           variants={containerVariants}
@@ -71,12 +71,12 @@ const OpportunityCards: React.FC = () => {
               </p>
 
               {/* Link */}
-              <Link
+              {/* <Link
                 to={`/opportunities/${opportunity.slug}`}
                 className="text-teal-600 dark:text-teal-400 hover:text-teal-800 dark:hover:text-teal-200 font-medium text-sm transition-colors duration-300"
               >
                 Learn More
-              </Link>
+              </Link> */}
             </motion.div>
           ))}
         </motion.div>

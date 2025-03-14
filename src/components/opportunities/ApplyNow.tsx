@@ -42,7 +42,7 @@ const ApplyNow: React.FC = () => {
   };
 
   return (
-    <div className="w-full py-16 bg-gray-50 dark:bg-gray-800">
+    <div className="w-full py-16">
       <div className="max-w-[800px] w-full mx-auto px-4">
         <motion.div
           variants={containerVariants}
@@ -91,7 +91,7 @@ const ApplyNow: React.FC = () => {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="fixed inset-0 bg-black/50 dark:bg-black/70 flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 bg-black/50 dark:bg-black/70 flex items-center justify-center z-50 p-4 backdrop-blur-sm"
             onClick={() => setIsPopupOpen(false)} // Close on backdrop click
           >
             <motion.div

@@ -3,6 +3,8 @@ import Sub from '../components/Sub'
 import OpportunitiesHeader from '../components/opportunities/OpportunitiesHeader'
 import OpportunityCards from '../components/opportunities/OpportunityCards'
 import ApplyNow from '../components/opportunities/ApplyNow'
+import JobOpportunities from '../components/opportunities/JobOpportunities'
+import Scholarships from '../components/opportunities/scholarshipData'
 
 const YouthOpportunities = () => {
   return (
@@ -14,6 +16,8 @@ const YouthOpportunities = () => {
         <OpportunitiesHeader />
         <OpportunityCards />
         <ApplyNow />
+        <JobOpportunities />
+        <Scholarships />
       </div>
     </div>
   )
