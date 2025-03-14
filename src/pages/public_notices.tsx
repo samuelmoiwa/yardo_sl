@@ -2,6 +2,7 @@ import React from 'react'
 import Sub from '../components/Sub'
 import NoticesHeader from '../components/notices/NoticesHeader'
 import NoticeList from '../components/notices/NoticeList'
+import Subscribe from '../components/notices/Subscribe'
 
 const PublicNotices = () => {
   return (
@@ -12,6 +13,7 @@ const PublicNotices = () => {
       >
         <NoticesHeader />
         <NoticeList />
+        <Subscribe />
       </div>
     </div>
   )
