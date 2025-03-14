@@ -1,6 +1,9 @@
 import React from 'react'
 import Sub from '../components/Sub'
 import ProgramsHeader from '../components/programs/ProgramsHeader'
+import ProgramCards from '../components/programs/ProgramCards'
+import ImpactStats from '../components/about/ImpactStats'
+import LatestNews from '../components/LatestNews'
 
 const Programs = () => {
   return (
@@ -10,6 +13,9 @@ const Programs = () => {
         max-w-[110rem]"
       >
         <ProgramsHeader />
+        <ProgramCards />
+        <ImpactStats />
+        <LatestNews />
       </div>
     </div>
   )

@@ -5,7 +5,6 @@ import OurPrinciples from '../components/home/OurPrinciples';
 import About from '../components/home/About'
 import Donate from '../components/Donate';
 import FeaturedImpact from '../components/home/FeaturedImpact';
-import LatestNews from '../components/home/LatestNews';
 import TestimonialSlider from '../components/home/TestimonialSlider';
 import CallToAction from '../components/CallToAction';
 import PartnersHighlight from '../components/home/PartnersHighlight';
@@ -24,7 +23,6 @@ export default function Home() {
         <Donate />
         <OurPrinciples />
         <FeaturedImpact />
-        <LatestNews />
         <TestimonialSlider />
         <CallToAction />
         <PartnersHighlight />
