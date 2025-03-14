@@ -1,6 +1,6 @@
 import React, { useState, Suspense, lazy, useRef } from 'react';
 import { motion } from 'framer-motion'; // For animations
-import team from '../../lottie/EmojiSmile.json'; // Lottie animation file
+import team from '../../lottie/phone.json'; // Lottie animation file
 
 const Lottie = lazy(() => import('lottie-react'));
 
