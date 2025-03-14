@@ -3,6 +3,8 @@ import Sub from '../components/Sub'
 import NoticesHeader from '../components/notices/NoticesHeader'
 import NoticeList from '../components/notices/NoticeList'
 import Subscribe from '../components/notices/Subscribe'
+import FilterBar from '../components/notices/FilterBar'
+import SocialShare from '../components/notices/SocialShare'
 
 const PublicNotices = () => {
   return (
@@ -14,6 +16,10 @@ const PublicNotices = () => {
         <NoticesHeader />
         <NoticeList />
         <Subscribe />
+        <SocialShare />
+        {/* <FilterBar onFilterChange={function (filter: string): void {
+          throw new Error('Function not implemented.')
+        } } /> */}
       </div>
     </div>
   )
