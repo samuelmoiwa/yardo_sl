@@ -57,7 +57,7 @@ const NoticeList: React.FC = () => {
   };
 
   return (
-    <div className="w-full py-16 bg-gray-50 dark:bg-gray-800">
+    <div className="w-full py-16 ">
       <div className="max-w-[900px] w-full mx-auto px-4">
         {/* Notices List */}
         <motion.div variants={listVariants} initial="hidden" animate="visible" className="space-y-8">
