@@ -1,6 +1,7 @@
 import React from 'react'
 import Sub from '../components/Sub'
 import NoticesHeader from '../components/notices/NoticesHeader'
+import NoticeList from '../components/notices/NoticeList'
 
 const PublicNotices = () => {
   return (
@@ -10,6 +11,7 @@ const PublicNotices = () => {
         max-w-[110rem]"
       >
         <NoticesHeader />
+        <NoticeList />
       </div>
     </div>
   )
