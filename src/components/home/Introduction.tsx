@@ -67,7 +67,8 @@ const Introduction = () => {
           <Card
             icon={<FontAwesomeIcon icon={faLeaf} className="text-5xl text-green-600 mb-4" />}
             heading="Agriculture"
-            details="We equip young farmers with skills and resources to boost food security and economic growth through sustainable farming and agro-processing."
+            details="We equip young farmers with skills and resources to boost food security and
+              economic growth through sustainable farming and agro-processing."
           />
           <Card
             icon={<FontAwesomeIcon icon={faHandsHelping} className="text-5xl text-yellow-600 mb-4" />}
