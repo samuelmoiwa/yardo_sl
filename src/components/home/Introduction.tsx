@@ -83,7 +83,8 @@ const Introduction = () => {
           <Card
             icon={<FontAwesomeIcon icon={faUsers} className="text-5xl text-red-600 mb-4" />}
             heading="Environmental Protection"
-            details="We inspire youth to lead climate action—tackling hazards and fostering sustainability through community-driven projects."
+            details="We inspire youth to lead climate action—tackling hazards and fostering sustainability through
+            community-driven projects."
           />
           <div className="flex justify-center mt-5">
             <img
