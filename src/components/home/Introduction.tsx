@@ -38,7 +38,9 @@ const Introduction = () => {
         {/* Left Column */}
         <div className="mt-0 w-full gap-5">
           <div className="flex flex-col justify-start">
-            <h1 className="text-start dark:text-blue-600 text-blue-900 sm:pt-[8rem] font-poppins font-bold sm:text-4xl text-2xl">
+            <h1 className="text-start dark:text-blue-600 text-blue-900 sm:pt-[8rem] font-poppins font-bold
+              sm:text-4xl text-2xl"
+            >
               <span className="text-orange-500 font-mono text-lg">WELCOME TO</span> <br />
               YARDO-SL
             </h1>
