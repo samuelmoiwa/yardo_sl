@@ -13,7 +13,9 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ icon, heading, details }) => {
   return (
-    <div className="flex flex-col justify-center items-center max-w-sm w-full overflow-hidden mt-5 p-4 dark:bg-gray-700 bg-white rounded-lg hover:shadow-xl transition-all duration-300 cursor-pointer py-8">
+    <div className="flex flex-col justify-center items-center max-w-sm w-full overflow-hidden mt-5 p-4 dark:bg-gray-700
+      bg-white rounded-lg hover:shadow-xl transition-all duration-300 cursor-pointer py-8"
+    >
       <div className="flex justify-center">{icon}</div>
       <div className="flex flex-col justify-center items-start px-6 py-4">
         <div className="font-bold lg:text-xl text-sm mb-2 text-start dark:text-blue-200 text-blue-900">{heading}</div>
@@ -88,5 +90,6 @@ const Introduction = () => {
     </div>
   );
 };
+
 
 export default Introduction;
