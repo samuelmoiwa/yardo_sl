@@ -73,7 +73,8 @@ const Introduction = () => {
           <Card
             icon={<FontAwesomeIcon icon={faHandsHelping} className="text-5xl text-yellow-600 mb-4" />}
             heading="Public Health"
-            details="Our youth-led health initiatives promote wellness, combat disease, and improve access to care in underserved communities."
+            details="Our youth-led health initiatives promote wellness, combat disease, and improve access to care in
+            underserved communities."
           />
         </div>
 
