@@ -48,7 +48,9 @@ const Introduction = () => {
               Since 2014, we’ve been empowering Sierra Leone’s youth to break barriers and build a brighter future.
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mt-6">
-              Backed by <strong className="text-blue-600">300+ volunteers</strong> and partners like GOAL and the Environmental Protection Agency, we’re creating sustainable solutions nationwide.
+              Backed by <strong className="text-blue-600">300+ volunteers</strong>
+              and partners like GOAL and the Environmental Protection Agency, we’re creating sustainable
+              solutions nationwide.
             </p>
             <a
               href="/get-involved"
