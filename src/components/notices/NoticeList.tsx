@@ -147,5 +147,5 @@ const NoticeList: React.FC = () => {
   );
 };
 
-export default NoticeList;
 
+export default NoticeList;
