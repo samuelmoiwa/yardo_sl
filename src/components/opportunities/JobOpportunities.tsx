@@ -98,7 +98,8 @@ const JobOpportunities: React.FC = () => {
                 href={job.applyLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-block px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white rounded-md font-medium hover:bg-teal-700 dark:hover:bg-teal-600 transition-colors duration-300 text-center"
+                className="mt-auto inline-block px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white rounded-md
+                font-medium hover:bg-teal-700 dark:hover:bg-teal-600 transition-colors duration-300 text-center"
               >
                 Apply Now
               </a>
@@ -109,5 +110,6 @@ const JobOpportunities: React.FC = () => {
     </div>
   );
 };
+
 
 export default JobOpportunities;
