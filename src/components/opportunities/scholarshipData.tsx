@@ -89,5 +89,4 @@ const Scholarships: React.FC = () => {
   );
 };
 
-
 export default Scholarships;
