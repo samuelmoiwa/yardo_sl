@@ -178,4 +178,5 @@ const ApplyNow: React.FC = () => {
   );
 };
 
+
 export default ApplyNow;
