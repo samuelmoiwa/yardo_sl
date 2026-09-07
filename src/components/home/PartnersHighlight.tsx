@@ -87,4 +87,5 @@ const PartnersHighlight = () => {
   );
 };
 
+
 export default PartnersHighlight;
