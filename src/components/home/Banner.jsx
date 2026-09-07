@@ -52,6 +52,7 @@ const Banner = () => {
       <ShootingStars />
       <StarsBackground />
     </section>
+    
   );
 };
 
