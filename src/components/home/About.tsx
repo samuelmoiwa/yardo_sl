@@ -51,6 +51,7 @@ const About = () => {
           <p className="text-lg text-gray-700 dark:text-gray-300 font-Archivo max-w-[30rem]">
             YARDO-SL is a registered youth empowerment agency born in 2014, dedicated to breaking barriers of poverty and inequality in Sierra Leone. With a vibrant network of over 300 volunteers, we’re shaping a future where every young person can thrive.
           </p>
+          
           <Link
             to="/about"
             className="relative inline-flex h-12 overflow-hidden rounded-sm p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 my-10"
