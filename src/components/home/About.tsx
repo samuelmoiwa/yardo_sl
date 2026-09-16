@@ -40,6 +40,7 @@ const About = () => {
           />
         </div>
 
+
         <div className="sm:w-1/2 w-full px-3 font-Poppins sm:mt-0 mt-2">
           <h1 className="text-orange-500 font-mono">WHO WE ARE</h1>
           <h2 className="lg:py-10 py-5 text-blue-950 dark:text-blue-500 font-bold text-2xl">
