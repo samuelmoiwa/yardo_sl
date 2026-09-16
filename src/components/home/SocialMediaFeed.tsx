@@ -90,6 +90,7 @@ const SocialMediaFeed = () => {
           ))}
         </motion.div>
 
+
         {/* Follow Button */}
         <div className="text-center mt-10">
           <a
