@@ -35,6 +35,7 @@ const QuickStats = () => {
           YARDO-SL by the Numbers
         </motion.h1>
 
+
         {/* Stats Grid */}
         <motion.div
           variants={containerVariants}
