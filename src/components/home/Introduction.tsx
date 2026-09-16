@@ -78,6 +78,7 @@ const Introduction = () => {
           />
         </div>
 
+
         {/* Right Column */}
         <div className="mt-14 gap-5">
           <Card
