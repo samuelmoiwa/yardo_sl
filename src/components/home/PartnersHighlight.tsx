@@ -73,6 +73,7 @@ const PartnersHighlight = () => {
           </motion.div>
         </div>
 
+
         {/* Button */}
         <div className="text-center mt-10">
           <Link
