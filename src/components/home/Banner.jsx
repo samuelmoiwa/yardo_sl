@@ -32,6 +32,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
+        
 
         {/* Lottie Animation Section */}
         <div className="flex justify-center w-full md:w-1/2">
