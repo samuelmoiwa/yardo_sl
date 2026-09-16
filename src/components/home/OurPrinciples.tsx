@@ -85,6 +85,7 @@ const OurPrinciples = () => {
               </p>
             </p>
           ))}
+          
 
           <div className="ml-16">
             <Link
