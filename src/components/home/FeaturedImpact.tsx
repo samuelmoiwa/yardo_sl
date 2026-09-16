@@ -114,6 +114,7 @@ const FeaturedImpact = () => {
           </motion.div>
         </motion.div>
 
+
         {/* Button */}
         <div className="text-center mt-12">
           <Link
