@@ -19,6 +19,7 @@ const Donate = () => {
        >
         Donate
        </Link>
+       
 
      </div>)
    );
