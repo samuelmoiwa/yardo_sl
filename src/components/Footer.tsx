@@ -11,6 +11,7 @@ const Footer = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
   };
 
+  
   return (
     <footer className="w-full bg-gradient-to-r from-blue-900 to-green-800 text-white py-12">
       <div className="max-w-[80rem] w-full mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
