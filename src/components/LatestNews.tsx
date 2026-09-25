@@ -13,6 +13,7 @@ const LatestNews = () => {
     hidden: { opacity: 0, x: -30 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: 'easeOut' } },
   };
+  
 
   return (
     <div className="w-full flex flex-col justify-center items-center py-12 bg-white dark:bg-gray-800">
