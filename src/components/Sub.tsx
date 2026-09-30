@@ -3,6 +3,7 @@ import team from "../lottie/EmojiSmile.json";
 // Dynamically import Lottie to ensure it only runs on the client side
 const Lottie = lazy(() => import("lottie-react"));
 
+
 const Sub = () => {
     const lottieRef = useRef(null);
   return (
