@@ -15,8 +15,6 @@ interface SubLink {
   href: string;
 }
 
-
-
 const navigation: NavItem[] = [
   { name: "Home", href: "/", current: true },
   {
