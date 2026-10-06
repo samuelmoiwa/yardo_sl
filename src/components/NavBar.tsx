@@ -241,7 +241,6 @@ const NavBar: React.FC = () => {
 
             }
           </button>
-
         </div>
       )}
     </nav>
