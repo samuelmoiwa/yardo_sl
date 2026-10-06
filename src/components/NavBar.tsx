@@ -102,7 +102,6 @@ const NavBar: React.FC = () => {
     );
   };
 
-
   return (
     <div className='w-full flex flex-col justify-center items-center bg-white dark:bg-slate-900'>
       <nav
@@ -200,7 +199,6 @@ const NavBar: React.FC = () => {
           </div>
         </div>
       </div>
-
 
       {isOpen && (
         <div className="lg:hidden flex flex-col justify-center items-center px-3 pb-3">
