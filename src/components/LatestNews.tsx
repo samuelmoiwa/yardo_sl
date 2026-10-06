@@ -87,9 +87,7 @@ const LatestNews = () => {
               Expanding our reach.
             </p>
           </motion.div>
-        </motion.div>
-
-        
+        </motion.div> 
       </div>
     </div>
   );
