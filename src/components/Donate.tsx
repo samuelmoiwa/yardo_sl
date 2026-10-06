@@ -8,7 +8,6 @@ const Donate = () => {
      {
        text: "Make a donation to Youths Action for Relentless Development Organization",
      },
-     
    ];
    return (
      (<div className="flex flex-col items-center justify-center bg-blue-900 dark:bg-gray-900 w-full py-10">
