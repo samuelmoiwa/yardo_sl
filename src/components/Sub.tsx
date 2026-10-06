@@ -18,8 +18,6 @@ const Sub = () => {
                 className="max-w-[20rem] w-full transition-transform duration-300 hover:scale-105 "
             />
         </Suspense>
-        
-
         <p> subscribe to premium</p>
         <p> $500,000 to view rest of the pages..</p>
     </div>
