@@ -179,7 +179,6 @@ const NavBar: React.FC = () => {
                 Make a Donation
               </Link>
 
-
               <button onClick={toggleTheme} className="text-white text-xl ml-[5rem]">
                 {theme === "dark" ?
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6 text-white">
