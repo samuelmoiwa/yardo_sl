@@ -16,7 +16,7 @@ const Banner = () => {
         {/* Text Section */}
         <div className="space-y-6 md:w-1/2">
           <h2 className="text-3xl lg:text-4xl font-bold dark:text-blue-800 text-blue-400">
-            Empowering Youth, <br /> Building Better Communities
+            Empowering Youths, <br /> Building Better Communities
           </h2>
           <div className="space-y-4">
             {/* Mission */}
@@ -24,9 +24,11 @@ const Banner = () => {
               <FaSeedling className="text-green-700 text-4xl" />
               <div>
                 <p className="text-gray-300 dark:text-gray-400 text-sm md:text-base leading-relaxed">
-                  Welcome to YARDO-SL, a youth empowerment agency dedicated to
-                  creating a just and inclusive society free from poverty,
-                  hunger, environmental degradation, disease, and inequality.
+                  Welcome to YARDO-SL, a youth empowerment agency, that has the honor and privilege of serving 
+                  and we pride ourselves on providing the continued assistance to create the highest level of impact.
+                  We place plenty of emphasis on areas that affect the welfare and livelihood of Sierra Leonean youths 
+                  and we believe that by working together with the young people, 
+                  we will collectively improve lives, prosper communities and contribute to the sustainable development of our country.
                 </p>
               </div>
             </div>
